@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/boxInsetLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    tools:context=".CheckCalories"
+    tools:deviceIds="wear">
+
+    <TextView
+        android:id="@+id/bmiValueLabel"
+        android:layout_width="229dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/bmiValueLabel"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bmiValue"
+        android:layout_width="218dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/bmiValueDefault"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bmiValueLabel" />
+
+    <TextView
+        android:id="@+id/caloriesLabel"
+        android:layout_width="329dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="208dp"
+        android:gravity="center"
+        android:text="@string/calories"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bmiValue" />
+
+    <TextView
+        android:id="@+id/caloriesValue"
+        android:layout_width="283dp"
+        android:layout_height="58dp"
+        android:gravity="center"
+        android:text="@string/caloriesValueDefault"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caloriesLabel"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="264dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bmiValue">
+
+
+        <RadioButton
+            android:id="@+id/radio_women"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/women"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/radio_man"
+            tools:layout_conversion_absoluteHeight="48dp"
+            tools:layout_conversion_absoluteWidth="264dp"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="205dp" />
+
+
+        <RadioButton
+            android:id="@+id/radio_man"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/man"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_conversion_absoluteHeight="21dp"
+            tools:layout_conversion_absoluteWidth="220dp"
+            tools:layout_editor_absoluteX="94dp"
+            tools:layout_editor_absoluteY="281dp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/ageLabel"
+        android:layout_width="262dp"
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:text="@string/age"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Button
+        android:id="@+id/foodOfferButton"
+        android:layout_width="221dp"
+        android:layout_height="66dp"
+        android:text="@string/foodButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caloriesValue" />
+
+    <TextView
+        android:id="@+id/recipe"
+        android:layout_width="364dp"
+        android:layout_height="156dp"
+        android:text="@string/recipe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodOfferButton" />
+
+    <EditText
+        android:id="@+id/ageValue"
+        android:layout_width="193dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/ageValue"
+        app:layout_constraintBottom_toTopOf="@+id/caloriesLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ageLabel"
+        android:autofillHints="" />
+</androidx.constraintlayout.widget.ConstraintLayout>
