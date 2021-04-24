@@ -19,4 +19,10 @@
     <string name="ageValue">24</string>
     <string name="foodButton">Oblicz i podaj przepis</string>
     <string name="recipe">Tutaj pojawi się przepis</string>
+    <string name="question">Pytanie %1$d of %2$d</string>
+    <string name="reset_quiz">Reset Quiz</string>
+    <string name="results">%1$d prób, %2$.02f%% poprawnych</string>
+    <string name="incorrect_answer">Źle!</string>
+    <string name="chart">Wykres</string>
+    <string name="quiz">Quiz</string>
 </resources>

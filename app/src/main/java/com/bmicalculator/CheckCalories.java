@@ -1,5 +1,4 @@
 package com.kalkulatorbmi;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
@@ -11,9 +10,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
-
 import java.text.NumberFormat;
-
 public class CheckCalories extends AppCompatActivity {
     private static final NumberFormat weightFormat = NumberFormat.getNumberInstance();
     private static final NumberFormat intFormat = NumberFormat.getIntegerInstance();

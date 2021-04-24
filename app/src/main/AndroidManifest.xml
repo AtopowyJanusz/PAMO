@@ -3,6 +3,7 @@
     package="com.example.kalkulatorbmi">
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <uses-feature android:name="android.hardware.type.watch" />
 
@@ -13,6 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KalkulatorBMI">
+        <activity android:name=".Quiz"></activity>
+        <activity android:name=".Chart"></activity>
         <activity
             android:name=".StartPage"
             android:label="@string/title_activity_start_page">

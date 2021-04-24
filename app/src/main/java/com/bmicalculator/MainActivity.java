@@ -1,5 +1,4 @@
 package com.kalkulatorbmi;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
@@ -10,7 +9,6 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import java.text.NumberFormat;
-
 public class MainActivity extends AppCompatActivity {
     public static final String BMI = "com.app.CheckCaloriesBMI";
     public static final String WEIGHT = "com.app.CheckCaloriesWEIGHT";
