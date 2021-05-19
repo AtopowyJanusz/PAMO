@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Kalkulator BMI</string>
+    <string name="height">Wzrost</string>
+    <string name="weight">Waga</string>
+    <string name="bmiValue">Wartość BMI</string>
+    <string name="bmiValueDefault">0.0</string>
+    <string name="heightDefault">1</string>
+    <string name="startImg">logo</string>
+    <string name="startButton">START</string>
+    <string name="checkCaloriesButton">Sprawdź kalorie</string>
+    <string name="title_activity_start_page">StartPage</string>
+    <string name="title_activity_check_calories">CheckCalories</string>
+    <string name="bmiValueLabel">Wartość BMI</string>
+    <string name="calories">Zapotrzebowanie kaloryczne: </string>
+    <string name="caloriesValueDefault">0.0</string>
+    <string name="women">Kobieta</string>
+    <string name="man">Mężczyzna</string>
+    <string name="age">Wiek</string>
+    <string name="ageValue">24</string>
+    <string name="foodButton">Oblicz i podaj przepis</string>
+    <string name="recipe">Tutaj pojawi się przepis</string>
+    <string name="question">Pytanie %1$d of %2$d</string>
+    <string name="reset_quiz">Reset Quiz</string>
+    <string name="results">%1$d prób, %2$.02f%% poprawnych</string>
+    <string name="incorrect_answer">Źle!</string>
+    <string name="chart">Wykres</string>
+    <string name="quiz">Quiz</string>
+</resources>
